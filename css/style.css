@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #121212;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    color: #121212;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+/* サイドメニューの横幅分だけ左にmarginをとる */
+.container {
+    margin-left: 300px;
+}
+
+/* コンテンツ幅を設定するための共通クラス */
+.wrapper {
+    max-width: 900px;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+.site-title {
+    width: 200px;
+    line-height: 1px;
+    margin-bottom: 30px;
+}
+
+.site-title a {
+    display: block;
+}
