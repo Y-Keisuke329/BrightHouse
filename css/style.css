@@ -67,6 +67,30 @@ li {
 }
 
 /*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+/*サイドのロゴとグローバルナビゲーションは「header」タグで囲む*/
+#header {
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    padding: 40px 50px 30px 45px;
+    position: fixed;
+    top: 0;
+    /* 画面の高さが低くてメニューが隠れてしまった場合に、縦スクロールが出るよう設定 */
+    overflow-y: auto;
+}
+
+#header .nav-menu {
+    margin-bottom: 60px;
+}
+
+#header li {
+    font-size: 0.875rem;
+    padding: 8px 0;
+}
+
+/*-------------------------------------------
 SP
 -------------------------------------------*/
 @media screen and (max-width: 960px) {
