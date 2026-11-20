@@ -44,3 +44,31 @@ li {
 .site-title a {
     display: block;
 }
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 960px) {
+    .container {
+        margin-left: 0;
+    }
+
+    .wrapper {
+        padding: 60px 20px;
+    }
+
+    .site-title {
+        width: 180px;
+        margin-bottom: 0;
+    }
+
+    .sec-title {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+    }
+
+    .sec-title::before,
+    .sec-title::after {
+        width: 18%;
+    }
+}
