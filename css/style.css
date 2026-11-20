@@ -97,3 +97,66 @@ SP
     transition: 0.5s;
     z-index: 20;
 }
+
+.open #navi {
+    left: 0;
+    opacity: 1;
+}
+
+#navi ul.nav-menu {
+    margin-bottom: 30px;
+}
+
+#navi ul li {
+    padding: 10px 0;
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 22px;
+    right: 18px;
+    transition: 0.5s;
+    z-index: 20;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 2px;
+    background-color: #121212;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+.hamburger span:nth-child(1) {
+    top: 4px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 14px;
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 4px;
+}
+
+.open .hamburger span {
+    background-color: #fff;
+}
+
+.open .hamburger span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+}
+
+.open .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.open .hamburger span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+}
