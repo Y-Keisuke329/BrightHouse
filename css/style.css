@@ -111,6 +111,64 @@ z-indexでマイナスを設定して、他のコンテンツの下に隠れる�
 }
 
 /*-------------------------------------------
+Project
+-------------------------------------------*/
+/* 背景に黒の透過グラデーションを設定 */
+#project {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0, ));
+    color: #fff;
+}
+
+#project .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#project .list li {
+    width: 47%;
+    border: solid 1px #fff;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* 下段の2つはマージンを設定しない */
+#project .list li:last-child,
+#project .list li:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+#project .list li a {
+    display: block;
+}
+
+/* 疑似要素を使用して、テキストの下に「box-shadow」で影を付ける */
+#project .list li a::after {
+    content: "";
+    box-shadow: 0 -30px 15px -1px #2e2e2e inset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#project .list .name {
+    color: #fff;
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 4px;
+    left: 7px;
+    z-index: 5;
+}
+
+/*-------------------------------------------
+Feature
+-------------------------------------------*/
+/* 背景に黒の透過を設定 */
+#feature {}
+
+/*-------------------------------------------
 フッター
 -------------------------------------------*/
 #footer {
