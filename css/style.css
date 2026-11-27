@@ -166,7 +166,34 @@ Project
 Feature
 -------------------------------------------*/
 /* 背景に黒の透過を設定 */
-#feature {}
+#feature {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+#feature .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+#feature .list li {
+    width: 30%;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/*
+円を作成
+
+レスポンシブに対応した可変サイズの円を作成する場合は、
+widthに100%を設定して、paddingで上下を50%に設定
+今回は円の中にテキストが入っているのと、枠線をつけているため、
+50%から上下それぞれテキストの高さ（10px）とボーダー（1px）をマイナスしている
+※テキストの高さは、ディベロッパーツールで20pxと確認できるため、
+上下で分割してそれぞれ10pxとなる。
+
+*/
 
 /*-------------------------------------------
 フッター
