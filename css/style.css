@@ -194,6 +194,19 @@ widthに100%を設定して、paddingで上下を50%に設定
 上下で分割してそれぞれ10pxとなる。
 
 */
+#feature .list li a {
+    width: 100%;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    padding: calc(50%-11px)0;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    /* ホバー時用の要素を隠すために設定 */
+    overflow: hidden;
+}
 
 /*-------------------------------------------
 フッター
