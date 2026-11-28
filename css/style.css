@@ -393,4 +393,45 @@ SP
         left: 0;
         z-index: 10;
     }
+
+    /*-------------------------------------------
+      Video
+      -------------------------------------------*/
+    /*
+      スマホの場合は、動画が見切れすぎないよう高さを調整
+      */
+    #video {
+        height: 80vh;
+    }
+
+    #video .bg-video {
+        height: 520px;
+        top: 72px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    /*-------------------------------------------
+      Project
+      -------------------------------------------*/
+    #project .list {
+        flex-direction: column;
+    }
+
+    #project .list li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #project .list li:nth-last-child(2) {
+        margin-bottom: 30px;
+    }
+
+    /*-------------------------------------------
+      Feature
+      -------------------------------------------*/
+    #feature {
+        padding-bottom: 60px;
+    }
 }
