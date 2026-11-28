@@ -200,7 +200,7 @@ widthに100%を設定して、paddingで上下を50%に設定
     border-radius: 50%;
     color: #fff;
     display: block;
-    padding: calc(50%-11px)0;
+    padding: calc(50% - 11px)0;
     margin-bottom: 15px;
     text-align: center;
     position: relative;
